@@ -4,7 +4,8 @@
 ## A. Cuestionario
 
 ### 1. Motivaciones para la nube  
-**1.a. ¿Qué problemas o limitaciones existían antes del surgimiento de la computación en la nube y cómo los solucionó la centralización de servidores en data centers?**  
+**1.a. ¿Qué problemas o limitaciones existían antes del surgimiento de la computación en la nube y cómo los solucionó la centralización de servidores en data centers?**
+
 Antes de la nube, las empresas dependían de hardware propio y centros de datos aislados, lo que generaba altos costos, baja escalabilidad y dificultad para responder a picos de demanda. La centralización en data centers permitió consolidar recursos, optimizar el uso de la infraestructura y ofrecer un modelo de pago por uso que reduce gastos operativos.
 
 **1.b. ¿Por qué se habla de “The Power Wall” y cómo influyó la aparición de procesadores multi-core en la evolución hacia la nube?**  
