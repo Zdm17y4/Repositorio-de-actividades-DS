@@ -11,14 +11,10 @@
             "id": "5cc33a76014d753f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Actividad2-CC3S2-Solución.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Actividad2-CC3S2-Solución"
+              "title": "New tab"
             }
           }
         ]
@@ -170,11 +166,13 @@
   },
   "active": "5cc33a76014d753f",
   "lastOpenFiles": [
-    "Actividad1-CC3S2-Solución.md",
+    "Actividad3-CC3S2-Solución.md",
+    "main.py",
+    "CONTRIBUTING.md",
     "Actividad2-CC3S2-Solución.md",
+    "Actividad1-CC3S2-Solución.md",
     "Actividad4-CC3S2-Solución.md",
     "Sin confirmar 396369.crdownload",
-    "Actividad3-CC3S2-Solución.md",
     "Sin confirmar 571273.crdownload"
   ]
 }
