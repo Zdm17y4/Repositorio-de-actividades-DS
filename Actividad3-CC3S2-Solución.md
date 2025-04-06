@@ -106,29 +106,11 @@ Los hyperscalers (como AWS, Azure y Google Cloud) son proveedores de infraestruc
 
 ## C. Ejercicio de presentación de "Mini-proyecto"
 
-### 1. Objetivo del sistema  
-Desarrollar una plataforma de e-commerce que permita a los usuarios comprar productos en línea, integrando pasarelas de pago y gestión de inventario.
+Como parte del **aprendizaje práctico**, forma equipos y presenten un **"Mini-proyecto de arquitectura en la nube"**:
 
-### 2. Selección de modelo de servicio  
-Se utilizará **PaaS** para el despliegue de la aplicación, permitiendo centrarse en el desarrollo y la lógica de negocio sin preocuparse por la administración de la infraestructura.
-
-### 3. Tipo de nube  
-La solución se desplegará en un entorno **híbrido**: se utilizará una nube pública para el front-end y servicios escalables, mientras que la información sensible y las bases de datos se alojarán en una nube privada para mayor control y seguridad.
-
-### 4. Esquema de escalabilidad  
-La aplicación se escalará mediante balanceadores de carga que distribuyen el tráfico entre múltiples instancias en la nube pública, con autoescalado basado en la demanda para gestionar picos de visitas.
-
-### 5. Costos y riesgos  
-- **Costos:** Gastos operativos (OPEX) por el uso de servicios en la nube, inversión en seguridad y mantenimiento de la nube privada.  
-- **Riesgos:** Dependencia del proveedor (lock-in), desafíos en la gestión de la seguridad en entornos duales y complejidad en la integración.
-
-### 6. Presentación final  
-**Diagrama de infraestructura (descripción):**  
-- **Capa de presentación:** Servidores web en la nube pública detrás de un balanceador de carga.  
-- **Capa de aplicación:** Microservicios desplegados en contenedores orquestados con Kubernetes.  
-- **Capa de datos:** Base de datos gestionada en la nube privada, conectada de forma segura (VPN) con la nube pública.  
-- **Monitoreo y seguridad:** Implementación de herramientas de observabilidad (Prometheus, Grafana) y gestión de identidades (IAM).
-
----
-
-Cada sección ha sido resuelta de forma ordenada y concisa, siguiendo tanto la lectura como conceptos actualizados en el ámbito de la computación en la nube.
+1. **Objetivo del sistema**: Cada equipo define brevemente la aplicación o servicio (por ejemplo, un e-commerce, un sistema de reservas, una plataforma de contenido).
+2. **Selección de modelo de servicio**: Explica si se utilizará IaaS, PaaS o SaaS, y justifica por qué.
+3. **Tipo de nube**: Decide si vas a desplegar la aplicación en una nube pública, privada, híbrida o multi-cloud. Argumenta con un análisis de ventajas y desventajas.
+4. **Esquema de escalabilidad**: Describe cómo la aplicación escalaría en caso de aumento de demanda.
+5. **Costos y riesgos**: Menciona los principales costos (directos o indirectos) y los riesgos asociados a tu elección (p.ej., dependencia del proveedor, requerimientos de seguridad).
+6. **Presentación final**: Prepara un diagrama de alto nivel (físico o lógico) donde se visualice la infraestructura básica y los componentes en la nube.
