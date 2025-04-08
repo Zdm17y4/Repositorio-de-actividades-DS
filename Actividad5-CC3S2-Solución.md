@@ -190,11 +190,11 @@ Esto combinará todos los cambios de la rama add-multiple-features en un solo nu
 1. **Clona un repositorio Git con múltiples ramas.**  
    Identifica dos ramas que puedas fusionar utilizando `git merge --ff`.  
    Haz el proceso de fusión utilizando `git merge --ff`.  
-   Verifica el historial con `git log --graph --oneline`.  
+   Verifica el historial con `git log --graph --oneline`. 
+![[Pasted image 20250407231553.png]]
 
    **Pregunta:** ¿En qué situaciones recomendarías evitar el uso de `git merge --ff`? Reflexiona sobre las desventajas de este método.
-   
-	Se recomienda evitar el uso de git merge --ff cuando se trabaje en proyectos colaborativos más grandes, ya que en ellos se debe tener un historial de commits más claro.
+    Se recomienda evitar el uso de git merge --ff cuando se trabaje en proyectos colaborativos más grandes, ya que en ellos se debe tener un historial de commits más claro.
 
 2. **Simula un flujo de trabajo de equipo.**  
    Trabaja en dos ramas independientes, creando diferentes cambios en cada una.  
@@ -205,14 +205,16 @@ Esto combinará todos los cambios de la rama add-multiple-features en un solo nu
 	![[Pasted image 20250407122046.png]]
    **Pregunta:** ¿Cuáles son las principales ventajas de utilizar `git merge --no-ff` en un proyecto en equipo? ¿Qué problemas podrían surgir al depender excesivamente de commits de fusión?
 
-	
+	Con `git merge --no-ff` mantienes un historial claro con commits de fusión que señalan exactamente cuándo y cómo se integró cada rama, lo que facilita el seguimiento y la reversión de bloques de cambios en equipo. Abusar de estos merges puede llenar el log de commits de fusión innecesarios, convirtiendo el historial ruidoso y más difícil de navegar
+
 3. **Crea múltiples commits en una rama.**  
    Haz varios cambios y commits en una rama feature.  
    Fusiona la rama con `git merge --squash` para aplanar todos los commits en uno solo.  
    Verifica el historial de commits antes y después de la fusión para ver la diferencia.  
-
+	![[Pasted image 20250407232533.png]]
    **Pregunta:** ¿Cuándo es recomendable utilizar una fusión squash? ¿Qué ventajas ofrece para proyectos grandes en comparación con fusiones estándar?
-
+   
+	Es recomendable utilizar la fusión squash si se quiere dejar un único commit bien documentado que resuma toda la funcionalidad o corrección. En proyectos grandes esto facilita la revisión de cambios y reduce el tamaño del historial.  
 
 #### Resolver conflictos en una fusión non-fast-forward
 
@@ -453,11 +455,15 @@ Este ejercicio te permitirá practicar la fusión de ramas en un entorno remoto 
 Configura un proyecto simulado:
 
 - Crea un proyecto con tres ramas: main, feature1, y feature2.
-- Realiza varios cambios en feature1 y feature2 y simula colaboraciones paralelas.
+	![[Pasted image 20250407235134.png]]
+	- Realiza varios cambios en feature1 y feature2 y simula colaboraciones paralelas.
 - Realiza fusiones utilizando diferentes métodos:
   - Fusiona feature1 con main utilizando `git merge --ff`.
+	![[Pasted image 20250408002421.png]]
   - Fusiona feature2 con main utilizando `git merge --no-ff`.
+	![[Pasted image 20250408002610.png]]
   - Haz una rama adicional llamada feature3 y aplasta sus commits utilizando `git merge --squash`.
+	![[Pasted image 20250408003704.png]]
 
 Analiza el historial de commits:
 
