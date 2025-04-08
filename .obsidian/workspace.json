@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Actividad3-CC3S2-Solución.md",
-                "mode": "preview",
+                "file": "Actividad5-CC3S2-Solución.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Actividad3-CC3S2-Solución"
+              "title": "Actividad5-CC3S2-Solución"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "396b3fafaa9020bc",
@@ -170,9 +170,25 @@
   },
   "active": "5cc33a76014d753f",
   "lastOpenFiles": [
+    "Images/Pasted image 20250407230107.png",
+    "Images/Pasted image 20250407230050.png",
+    "Images/Pasted image 20250407225539.png",
+    "Images/Pasted image 20250407225510.png",
+    "Images/Pasted image 20250407225417.png",
+    "Images/Pasted image 20250407225334.png",
+    "Images/Pasted image 20250407224223.png",
+    "Images/Pasted image 20250407224137.png",
+    "Images/Pasted image 20250407224046.png",
+    "Images/Pasted image 20250407223825.png",
+    "Images/Pasted image 20250407223801.png",
+    "Images",
+    "Nueva carpeta",
+    "Untitled.md",
+    "Actividad5-CC3S2-Solución.md",
+    "Preguntas.md",
+    "Actividad3-CC3S2-Solución.md",
     "Actividad2-CC3S2-Solución.md",
     "Actividad1-CC3S2-Solución.md",
-    "Actividad3-CC3S2-Solución.md",
     "main.py",
     "CONTRIBUTING.md",
     "Actividad4-CC3S2-Solución.md",
