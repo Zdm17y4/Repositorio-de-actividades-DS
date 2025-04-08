@@ -69,11 +69,29 @@ Los hyperscalers (como AWS, Azure y Google Cloud) son proveedores de infraestruc
 ## B. Actividades de investigación y aplicación
 
 ### 1. Estudio de casos  
-- Busca dos o tres casos de empresas (startups o grandes organizaciones) que hayan migrado parte de su infraestructura a la nube. Describe:
-    1. Sus motivaciones para la migración.
-    2. Los beneficios obtenidos (por ejemplo, reducción de costos, escalabilidad, flexibilidad).
-    3. Los desafíos o dificultades enfrentadas (ej. seguridad, cumplimiento normativo).
+**1. Western Digital**
 
+- **Motivaciones para la migración**: Tras fusionarse con SanDisk y HGST, Western Digital buscaba centralizar sus operaciones y mejorar la eficiencia operativa.
+- **Beneficios obtenidos**: Integración de funciones empresariales como gestión del rendimiento y análisis, mejorando la eficiencia operativa. 
+- **Desafíos enfrentados**: Integrar sistemas de tres empresas distintas y garantizar la compatibilidad de las soluciones ERP.
+
+Referencias:​
+https://www.investopedia.com/articles/investing/111214/lg-case-study-successful-enterprise-resource-planning-system.asp
+
+**2. Autodesk**
+
+- **Motivaciones para la migración**: Incrementar la eficiencia de sus aplicaciones heredadas, reducir costos y minimizar su huella de carbono.
+- **Beneficios obtenidos**: Migración o retiro de más de 400 aplicaciones empresariales, mejora del 80% en el tiempo de recuperación ante desastres y reducción del 58% en la huella de carbono. ​ 
+- **Desafíos enfrentados**: Identificar sistemas para retirar o migrar sin interrumpir procesos y capacitar al personal en computación en la nube.     
+
+**3. Pizza Hut**
+
+- **Motivaciones para la migración**: Adaptarse a la creciente competencia y al aumento de pedidos en línea, buscando agilidad y nuevas tecnologías para escalar.
+- **Beneficios obtenidos**: Reducción del tiempo de respuesta de las API en 10 veces, duplicación rápida de nodos de Kubernetes y mejora en la identificación de cuellos de botella.
+- **Desafíos enfrentados**: Identificar servicios adecuados para cada proceso y migrar servicios backend a un entorno de microservicios.
+
+Referencias:
+	https://evincedev.com/blog/guide-on-cloud-migration/
 ### 2. Comparativa de modelos de servicio  
 **Cuadro Comparativo de Responsabilidades:**
 
