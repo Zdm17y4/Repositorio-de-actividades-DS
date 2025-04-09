@@ -102,10 +102,12 @@ Responde en equipo las siguientes preguntas con base en la lectura:
 > El monitoreo recopila métricas del sistema (uso de CPU, memoria, latencia de respuestas, tasa de errores), mientras que la observabilidad cuenta con un enfoque completo de monitoreo, registro de logs y trazabilidad. La observabilidad  es indispensable para detectar problemas antes de que afecten a los usuarios finales.
 
 
-4. **¿Cómo puede la experiencia del desarrollador impactar el éxito de DevOps en una organización?**  
-5. **Describe cómo InnerSource puede ayudar a reducir silos dentro de una organización.**  
+4. **¿Cómo puede la experiencia del desarrollador impactar el éxito de DevOps en una organización?**
+>Desarrolladores experimentados podrían detectar tareas repetitivas y vulnerables al error, estas tareas podrían optimizarlas mediante la adopción de DevOps como marco de trabajo.
+5. **Describe cómo InnerSource puede ayudar a reducir silos dentro de una organización.**
+>InnerSource -al ser una metodología que aplica las mejores prácticas usadas en el desarrollo de código abierto- promueve la transparencia y colaboración entre diferentes equipos, permitiendo la reutilización de código y fomentando la innovación.
 6. **¿Qué rol juega la ingeniería de plataformas en mejorar la eficiencia y la experiencia del desarrollador?**  
-
+>La ingeniería de plataformas facilitan el desarrollo y despliegue de software, esto reduce la complejidad de tareas y hace que los desarrolladores sean más eficientes, ya que elimina el error en tareas repetitivas.
 ---
 
 ### Indicaciones para trabajo grupal

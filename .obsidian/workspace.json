@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Actividad3-CC3S2-Solución.md",
-                "mode": "preview",
-                "source": false
+                "file": "Actividad5-CC3S2-Solución.md",
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Actividad3-CC3S2-Solución"
+              "title": "Actividad5-CC3S2-Solución"
             }
           }
         ]
@@ -170,8 +170,8 @@
   },
   "active": "5cc33a76014d753f",
   "lastOpenFiles": [
-    "Actividad5-CC3S2-Solución.md",
     "Actividad3-CC3S2-Solución.md",
+    "Actividad5-CC3S2-Solución.md",
     "Images/Pasted image 20250408003704.png",
     "Images/Pasted image 20250408002610.png",
     "Images/Pasted image 20250408002421.png",
