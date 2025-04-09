@@ -73,7 +73,7 @@ $ git add README.md
 $ git commit -m "Agregar descripción al README.md"
 ```
 
-**Pregunta:** MUestra la estructura de commits resultante.
+**Pregunta:** Muestra la estructura de commits resultante.
 
 ```bash
 # Cambiar de vuelta a la rama 'main' y realizar la fusión fast-forward
@@ -85,7 +85,8 @@ $ git log --graph --oneline
 ```
 
 **Resultado:** El historial de tu repositorio.
-![[Pasted image 20250407121813.png]]
+
+<img src="Images/Pasted image 20250407121813.png" width="600"> 
 
 
 #### 2. Fusión No-fast-forward (git merge --no-ff)
@@ -131,7 +132,7 @@ $ git log --graph --oneline
 
 El historial de tu repositorio mostrará un commit de fusión.
 
-![[Pasted image 20250407121844.png]]
+<img src="Images/Pasted image 20250407121844.png" width="600">
 ##### 3. Fusión squash (git merge --squash)
 
 La fusión squash combina todos los cambios de una rama en un solo commit en la rama principal. Este método es útil cuando se quiere mantener un historial de commits limpio.
@@ -163,7 +164,7 @@ $ git commit -m "Agregar LICENSE.txt"
 ```
 
 **Pregunta:** ¿Cuál es tu estructura de commits?
-![[Pasted image 20250407121927.png]]
+<img src="Images/Pasted image 20250407121927.png" width="600">
 ```bash
 # Cambiar de vuelta a la rama 'main' y realizar la fusión squash
 $ git checkout main
@@ -181,7 +182,7 @@ $ git log --graph --oneline
 ```
 
 Esto combinará todos los cambios de la rama add-multiple-features en un solo nuevo commit en la rama main.
-![[Pasted image 20250407121934.png]]
+<img src="Images/Pasted image 20250407121934.png" width="600">
 
 ---
 
@@ -191,7 +192,7 @@ Esto combinará todos los cambios de la rama add-multiple-features en un solo nu
    Identifica dos ramas que puedas fusionar utilizando `git merge --ff`.  
    Haz el proceso de fusión utilizando `git merge --ff`.  
    Verifica el historial con `git log --graph --oneline`. 
-![[Pasted image 20250407231553.png]]
+<img src="Images/Pasted image 20250407231553.png" width="600">
 
    **Pregunta:** ¿En qué situaciones recomendarías evitar el uso de `git merge --ff`? Reflexiona sobre las desventajas de este método.
     Se recomienda evitar el uso de git merge --ff cuando se trabaje en proyectos colaborativos más grandes, ya que en ellos se debe tener un historial de commits más claro.
@@ -202,7 +203,7 @@ Esto combinará todos los cambios de la rama add-multiple-features en un solo nu
 	Se trabajó con dos ramas: master y another-branch . Se hizo la fusión de estas mediante el comando git merge --no-ff another-branch en la rama master después de haber ejecutado el comando git checkout master.
 
    Observa el historial utilizando `git log --graph --oneline`.  
-	![[Pasted image 20250407122046.png]]
+	<img src="Images/Pasted image 20250407122046.png" width="600">
    **Pregunta:** ¿Cuáles son las principales ventajas de utilizar `git merge --no-ff` en un proyecto en equipo? ¿Qué problemas podrían surgir al depender excesivamente de commits de fusión?
 
 	Con `git merge --no-ff` mantienes un historial claro con commits de fusión que señalan exactamente cuándo y cómo se integró cada rama, lo que facilita el seguimiento y la reversión de bloques de cambios en equipo. Abusar de estos merges puede llenar el log de commits de fusión innecesarios, convirtiendo el historial ruidoso y más difícil de navegar
@@ -211,7 +212,7 @@ Esto combinará todos los cambios de la rama add-multiple-features en un solo nu
    Haz varios cambios y commits en una rama feature.  
    Fusiona la rama con `git merge --squash` para aplanar todos los commits en uno solo.  
    Verifica el historial de commits antes y después de la fusión para ver la diferencia.  
-	![[Pasted image 20250407232533.png]]
+	<img src="Images/Pasted image 20250407232533.png" width="600">
    **Pregunta:** ¿Cuándo es recomendable utilizar una fusión squash? ¿Qué ventajas ofrece para proyectos grandes en comparación con fusiones estándar?
    
 	Es recomendable utilizar la fusión squash si se quiere dejar un único commit bien documentado que resuma toda la funcionalidad o corrección. En proyectos grandes esto facilita la revisión de cambios y reduce el tamaño del historial.  
@@ -226,26 +227,26 @@ En algunos casos, las fusiones no son tan sencillas y pueden surgir conflictos q
    cd try-merge-conflict
    git init
    ```
-![[Pasted image 20250407125505.png]]
+<img src="Images/Pasted image 20250407125505.png" width="600">
 2. Crea un archivo index.html y realiza un commit en la rama main:
    ```bash
    echo "<html><body><h1>Proyecto inicial CC3S2</h1></body></html>" > index.html
    git add index.html
    git commit -m "commit inicial del  index.html en main"
    ```
-![[Pasted image 20250407125519.png]]
+<img src="Images/Pasted image 20250407125519.png" width="600">
 3. Crea y cambia a una nueva rama feature-update:
    ```bash
    git checkout -b feature-update
    ```
-![[Pasted image 20250407125543.png]]
+<img src="Images/Pasted image 20250407125543.png" width="600">
 4. Edita el archivo y realiza un commit en la rama feature-update:
    ```bash
    echo "<p>.....</p>" >> index.html
    git add index.html
    git commit -m "Actualiza ..."
    ```
-![[Pasted image 20250407125559.png]]
+<img src="Images/Pasted image 20250407125559.png" width="600">
 5. Regresa a la rama main y realiza una edición en el mismo archivo:
    ```bash
    git checkout main
@@ -253,12 +254,12 @@ En algunos casos, las fusiones no son tan sencillas y pueden surgir conflictos q
    git add index.html
    git commit -m "....index.html"
    ```
-![[Pasted image 20250407125626.png]]
+<img src="Images/Pasted image 20250407125626.png" width="600">
 6. Fusiona la rama feature-update con --no-ff y observa el conflicto:
    ```bash
    git merge --no-ff feature-update
    ```
-![[Pasted image 20250407125638.png]]
+<img src="Images/Pasted image 20250407125638.png" width="600">
 7. Git detectará un conflicto en index.html. Abre el archivo y resuelve el conflicto. Elimina las líneas de conflicto generadas por Git (`<<<<<<<`, `=======`, `>>>>>>>`) y crea la versión final del archivo con ambos cambios:
 
    ```html
@@ -270,7 +271,7 @@ En algunos casos, las fusiones no son tan sencillas y pueden surgir conflictos q
      </body>
    </html>
    ```
-![[Pasted image 20250407125900.png]]
+<img src="Images/Pasted image 20250407125900.png" width="600">
 8. Agrega el archivo corregido y completa la fusión:
    ```bash
    git add index.html
@@ -281,7 +282,7 @@ En algunos casos, las fusiones no son tan sencillas y pueden surgir conflictos q
    ```bash
    git log --graph --oneline
    ```
-![[Pasted image 20250407125957.png]]
+<img src="Images/Pasted image 20250407125957.png" width="600">
 **Preguntas:**
 - ¿Qué pasos adicionales tuviste que tomar para resolver el conflicto?
 - ¿Qué estrategias podrías emplear para evitar conflictos en futuros desarrollos colaborativos?
@@ -317,12 +318,12 @@ Este ejercicio te permitirá observar las diferencias en el historial generado p
    git checkout main
    git merge feature-1 --ff
    ```
-![[Pasted image 20250407223115.png]]
+<img src="Images/Pasted image 20250407223115.png" width="600">
 3. Fusiona feature-2 usando non-fast-forward:
    ```bash
    git merge feature-2 --no-ff
    ```
-![[Pasted image 20250407223253.png]]
+<img src="Images/Pasted image 20250407223253.png" width="600">
 Se corrigieron los conflictos, antes de ejecutar un ```git add version.txt``` y ```git commit -m "Resolver conflictos"```
 4. Realiza una nueva rama feature-3 con múltiples commits y fusiónala con squash:
    ```bash
@@ -337,23 +338,23 @@ Se corrigieron los conflictos, antes de ejecutar un ```git add version.txt``` y 
    git merge --squash feature-3
    git commit -m "Agregar caracteristica 3 en un commit"
    ```
-![[Pasted image 20250407223658.png]]
+<img src="Images/Pasted image 20250407223658.png" width="600">
 5. Compara el historial de Git:
    - Historial Fast-forward:
      ```bash
      git log --graph --oneline --merges --first-parent –branches
      ```
-	![[Pasted image 20250407223734.png]]
+	<img src="Images/Pasted image 20250407223734.png" width="600">
    - Historial Non-fast-forward:
      ```bash
      git log --graph --oneline –merges
      ```
-	![[Pasted image 20250407223801.png]]
+	<img src="Images/Pasted image 20250407223801.png" width="600">
    - Historial con Squash:
      ```bash
      git log --graph --oneline --merges --decorate --all
      ```
-	![[Pasted image 20250407223825.png]]
+	<img src="Images/Pasted image 20250407223825.png" width="600">
 **Preguntas:**
 - ¿Cómo se ve el historial en cada tipo de fusión?
 - ¿Qué método prefieres en diferentes escenarios y por qué?
@@ -377,7 +378,7 @@ En este ejercicio, aprenderás cómo Git puede fusionar automáticamente cambios
    git add file.txt
    git commit -m "...linea 2"
    ```
-![[Pasted image 20250407224046.png]]
+<img src="Images/Pasted image 20250407224046.png" width="600">
 2. Crea una nueva rama auto-merge y realiza otro commit en file.txt:
    ```bash
    git checkout -b auto-merge
@@ -385,7 +386,7 @@ En este ejercicio, aprenderás cómo Git puede fusionar automáticamente cambios
    git add file.txt
    git commit -m "... linea 3"
    ```
-![[Pasted image 20250407224137.png]]
+<img src="Images/Pasted image 20250407224137.png" width="600">
 3. Vuelve a main y realiza cambios no conflictivos en otra parte del archivo:
    ```bash
    git checkout main
@@ -393,7 +394,7 @@ En este ejercicio, aprenderás cómo Git puede fusionar automáticamente cambios
    git add file.txt
    git commit -m "Add footer to file.txt"
    ```
-![[Pasted image 20250407224223.png]]
+<img src="Images/Pasted image 20250407224223.png" width="600">
 4. Fusiona la rama auto-merge con main:
    ```bash
    git merge auto-merge
@@ -427,7 +428,7 @@ Este ejercicio te permitirá practicar la fusión de ramas en un entorno remoto 
    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
    cd nombre-del-repositorio
    ```
-![[Pasted image 20250407225334.png]]
+<img src="Images/Pasted image 20250407225334.png" width="600">
 2. Crea una nueva rama colaboracion y haz algunos cambios:
    ```bash
    git checkout -b colaboracion
@@ -435,16 +436,16 @@ Este ejercicio te permitirá practicar la fusión de ramas en un entorno remoto 
    git add colaboracion.txt
    git commit -m "...."
    ```
-![[Pasted image 20250407225417.png]]
+<img src="Images/Pasted image 20250407225417.png" width="600">
 3. Empuja los cambios a la rama remota:
    ```bash
    git push origin colaboracion
    ```
-![[Pasted image 20250407225510.png]]
-![[Pasted image 20250407225539.png]]
+<img src="Images/Pasted image 20250407225510.png" width="600">
+<img src="Images/Pasted image 20250407225539.png" width="600">
 4. Simula una fusión desde la rama colaboracion en la rama main de otro colaborador. (Puedes usar la interfaz de GitHub para crear un Pull Request y realizar la fusión).
-![[Pasted image 20250407230050.png]]
-![[Pasted image 20250407230107.png]]
+<img src="Images/Pasted image 20250407230050.png" width="600">
+<img src="Images/Pasted image 20250407230107.png" width="600">
 **Preguntas:**
 - ¿Cómo cambia la estrategia de fusión cuando colaboras con otras personas en un repositorio remoto?
 - ¿Qué problemas comunes pueden surgir al integrar ramas remotas?
@@ -455,15 +456,15 @@ Este ejercicio te permitirá practicar la fusión de ramas en un entorno remoto 
 Configura un proyecto simulado:
 
 - Crea un proyecto con tres ramas: main, feature1, y feature2.
-	![[Pasted image 20250407235134.png]]
+	<img src="Images/Pasted image 20250407235134.png" width="600">
 	- Realiza varios cambios en feature1 y feature2 y simula colaboraciones paralelas.
 - Realiza fusiones utilizando diferentes métodos:
   - Fusiona feature1 con main utilizando `git merge --ff`.
-	![[Pasted image 20250408002421.png]]
+	<img src="Images/Pasted image 20250408002421.png" width="600">
   - Fusiona feature2 con main utilizando `git merge --no-ff`.
-	![[Pasted image 20250408002610.png]]
+	<img src="Images/Pasted image 20250408002610.png" width="600">
   - Haz una rama adicional llamada feature3 y aplasta sus commits utilizando `git merge --squash`.
-	![[Pasted image 20250408003704.png]]
+	<img src="Images/Pasted image 20250408003704.png" width="600">
 
 Analiza el historial de commits:
 
