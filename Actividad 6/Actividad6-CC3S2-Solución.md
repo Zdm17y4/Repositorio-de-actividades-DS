@@ -23,7 +23,7 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
      $ git add README.md
      $ git commit -m "Commit inicial en main"
      ```
-	<img src ="Pasted image 20250410125920.png" width=600>
+	<img src="Images/Pasted image 20250410125920.png" width=600>
    - Crea y cambia a la rama new-feature:
      ```bash
      $ git checkout -b new-feature
@@ -31,9 +31,9 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
      $ git add NewFeature.md
      $ git commit -m "Agregar nueva característica"
      ```
-	<img src ="Pasted image 20250410130020.png" width=600>
+	<img src="Images/Pasted image 20250410130020.png" width=600>
     **Pregunta:** Presenta el historial de ramas obtenida hasta el momento.
-	<img src ="Pasted image 20250410130046.png" width=600>
+	<img src="Images/Pasted image 20250410130046.png" width=600>
 
    Ahora, digamos que se han agregado nuevos commits a main mientras trabajabas en new-feature:
 
@@ -44,24 +44,24 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
    $ git add Updates.md
    $ git commit -m "Update main"
    ```
-	<img src ="Pasted image 20250410130305.png" width=600>
+	<img src="Images/Pasted image 20250410130305.png" width=600>
    Tu gráfico de commits ahora diverge (comprueba esto)
 	>Se comprueba lo pedido usando el comando ```git log --graph --oneline --all``` .
-   <img src ="Pasted image 20250410130449.png" width=600>
+   <img src="Images/Pasted image 20250410130449.png" width=600>
 
    > **Tarea**: Realiza el rebase de `new-feature` sobre `main` con los siguientes comandos:
    ```bash
    $ git checkout new-feature
    $ git rebase main
    ```
-	<img src ="Pasted image 20250410130940.png" width=600>
+	<img src="Images/Pasted image 20250410130940.png" width=600>
 3. **Revisión:**
 
    Después de realizar el rebase, visualiza el historial de commits con:
    ```bash
    $ git log --graph –oneline
    ```
-	<img src ="Pasted image 20250410131006.png" width=600>
+	<img src="Images/Pasted image 20250410131006.png" width=600>
 4. **Momento de fusionar y completar el proceso de git rebase:**
    ```bash
    # Cambiar a 'main' y realizar una fusión fast-forward
@@ -69,7 +69,7 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
    $ git merge new-feature
    ```
    Cuando se realiza una fusión *fast-forward*, las HEADs de las ramas main y new-feature serán los commits correspondientes.
-	<img src ="Pasted image 20250410131103.png" width=600>
+	<img src="Images/Pasted image 20250410131103.png" width=600>
 
 #### Parte 2: **git cherry-pick para la integración selectiva de commit**
 
@@ -113,9 +113,9 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
    # Echa un vistazo al log de la rama 'add-base-documents'
    $ git log add-base-documents --graph --oneline
    ```
-	<img src ="Pasted image 20250410134755.png" width=600>	
+	<img src="Images/Pasted image 20250410134755.png" width=600>	
     **Pregunta:** Muestra un diagrama de como se ven las ramas en este paso.
-	<img src ="Pasted image 20250410134901.png" width=600>
+	<img src="Images/Pasted image 20250410134901.png" width=600>
 
 4. **Tarea: Haz cherry-pick de un commit de add-base-documents a main:**
    ```bash
@@ -123,13 +123,13 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
    $ git cherry-pick a80e8ad  # Reemplaza con el hash real del commit de tu log
    ```
 	Se usó para la prueba el hash 404f1e8	
-	<img src ="Pasted image 20250410135007.png" width=600>
+	<img src="Images/Pasted image 20250410135007.png" width=600>
 5. **Revisión:**  
    Revisa el historial nuevamente:
    ```bash
    $ git log --graph --oneline
    ```
-	<img src ="Pasted image 20250410135117.png" width=600>   
+	<img src="Images/Pasted image 20250410135117.png" width=600>   
 	
 	Después de que hayas realizado con éxito el cherry-pick del commit, se agregará un nuevo commit a tu rama actual (main en este ejemplo) y contendrá los cambios del commit cherry-picked.  
 
