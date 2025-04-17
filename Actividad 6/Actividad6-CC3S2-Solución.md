@@ -226,7 +226,10 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
    $ git checkout main
    $ git merge feature --ff-only
    ```
-
+	![[Pasted image 20250413180056.png]]
+	![[Pasted image 20250413180217.png]]
+	![[Pasted image 20250413180339.png]]
+	![[Pasted image 20250413183347.png]]
 2. **Cherry-pick para integración selectiva en un pipeline CI/CD**
 
    **Contexto:**  
@@ -266,7 +269,10 @@ Aprender a usar los comandos `git rebase` y `git cherry-pick` para mantener un h
    $ git cherry-pick <hash_del_commit1>
    $ git cherry-pick <hash_del_commit2>
    ```
-
+	![[Pasted image 20250413184805.png]]
+	![[Pasted image 20250413184905.png]]
+	![[Pasted image 20250413185000.png]]
+	![[Pasted image 20250413185152.png]]
 ---
 
 #### **Git, Scrum y Sprints**
@@ -299,8 +305,10 @@ $ git checkout -b feature-user-story-1
 $ git checkout -b feature-user-story-2
 ```
 
+![[Pasted image 20250413203532.png]]
 **Pregunta:** ¿Por qué es importante trabajar en ramas de funcionalidades separadas durante un sprint?
 
+>
 
 #### **Fase 2: Desarrollo del sprint (sprint execution)**
 
@@ -328,6 +336,7 @@ $ git checkout feature-user-story-1
 $ git rebase main
 ```
 
+![[Pasted image 20250413203753.png]]
 **Pregunta:** ¿Qué ventajas proporciona el rebase durante el desarrollo de un sprint en términos de integración continua?
 
 
@@ -360,9 +369,10 @@ $ git checkout main
 $ git cherry-pick <hash_del_commit_de_feature-lista>
 ```
 
+![[Pasted image 20250413204214.png]]
 **Pregunta:** ¿Cómo ayuda `git cherry-pick` a mostrar avances de forma selectiva en un sprint review?
 
-
+>
 #### **Fase 4: Retrospectiva del sprint (sprint retrospective)**
 
 **Ejercicio 4: Revisión de conflictos y resolución**
@@ -394,9 +404,11 @@ $ git merge feature-user-story-1
 $ git merge feature-user-story-2
 ```
 
+![[Pasted image 20250413215344.png]]
+
 **Pregunta**: ¿Cómo manejas los conflictos de fusión al final de un sprint? ¿Cómo puede el equipo mejorar la comunicación para evitar conflictos grandes?
 
-
+>
 #### **Fase 5: Fase de desarrollo, automatización de integración continua (CI) con git rebase**
 
 **Ejercicio 5: Automatización de rebase con hooks de Git**
